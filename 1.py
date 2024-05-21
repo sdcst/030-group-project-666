@@ -1,41 +1,21 @@
-def calculate_fuel_required(weight, distance, time):
-    # 基础油量比例（假设为飞行时间的5%）
-    basic_fuel_ratio = 0.05
-    
-    # 燃油消耗率（假设为500公斤/小时）
-    fuel_consumption_rate = 500  # 公斤/小时
-    
-    # 计算基础油量
-    basic_fuel = time * basic_fuel_ratio
-    
-    # 计算备降油量（假设为30分钟）
-    alternate_fuel = 0.5 / 60 * fuel_consumption_rate
-    
-    # 预留油量（假设为1000公斤）
-    reserve_fuel = 1000  # 公斤
-    
-    # 总油量
-    total_fuel = basic_fuel + alternate_fuel + reserve_fuel
-    
-    return total_fuel
+def calculate_fuel(weight_takeoff, flight_time, average_fuel_consumption_rate):
+    total_fuel_consumed = average_fuel_consumption_rate * flight_time
+    return total_fuel_consumed
 
 def main():
-    print("空客A330飞机油量计算器")
-    print("=====================")
-    
-    # 输入数据并进行验证
+    print("A330 Fuel Requirements Calculator")
+    print("=======================")
     while True:
         try:
-            weight = float(input("请输入起飞重量（公斤）："))
-            distance = float(input("请输入飞行距离（公里）："))
-            time = float(input("请输入预计飞行时间（小时）："))
+            weight_takeoff = float(input("Please enter takeoff weight (kg):"))
+            flight_time = float(input("Please enter flight time (hours):"))
+            average_fuel_consumption_rate = float(input("Please enter average fuel consumption rate (kg/hour):"))
             break
         except ValueError:
-            print("输入无效，请输入数字。")
+            print("wrong number , please ernter again")
+    total_fuel_consumed = calculate_fuel(weight_takeoff, flight_time, average_fuel_consumption_rate)
     
-    # 计算油量
-    fuel_required = calculate_fuel_required(weight, distance, time)
-    print("空客A330所需油量：", fuel_required, "公斤")
+    print("The total amount fuel needed:", total_fuel_consumed, "kg")
 
 if __name__ == "__main__":
     main()
