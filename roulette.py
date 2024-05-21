@@ -1,14 +1,13 @@
 import random
-import math
 def spin_wheel():
     numbers = list(range(37))
-    colors = (['Red', 'Black'] * 18) + ['Green']
+    colors =  ['Green']+(['Red', 'Black'] * 18)
     spin = random.randint(0, 36)
     return numbers[spin], colors[spin]
 
 def main():
-    print("Welcome to Russian Wheel Roulette!")
-    bet = input("Place your bet (number 0-36 or red/black)> ")
+    print("Welcome to Russian Wheel Roulette!, you have ")
+    bet = input("Place your bet (number 0-36 or red/black/Green)> ")
     bet = bet.strip()
     bet = bet.lower()
 
@@ -18,10 +17,10 @@ def main():
             print("Invalid bet. Number must be between 0 and 36, please try again")
             main()
             return
-    elif bet in ['red', 'black']:
+    elif bet in ['red', 'black', 'green']:
         bet = bet.capitalize()
     else:
-        print("Invalid bet. Please bet on a number (0-36) or color (Red/Black).")
+        print("Invalid bet. Please bet on a number (0-36) or color (Red/Black/Green).")
         main()
         return
 
@@ -30,6 +29,7 @@ def main():
     print(f"The wheel spins... and lands on {number} {color}!")
 
     if (isinstance(bet, int) and bet == number) or (bet == color):
+        
         print("Congratulations, you win!")
     else:
         print("Sorry, you lose.")
