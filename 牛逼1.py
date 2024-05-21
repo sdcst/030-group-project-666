@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 def nb1():
     x = (float(input("Entre a mass of a")))
     y = (int(input("Is this object on erath?(1:yes)(2:no)")))
@@ -15,3 +16,9 @@ def main():
 
 if __name__ == "__main__":
     main()   
+=======
+def force(x, F):
+    x = (float(input("entre a mass of a> ")))
+    F = x * 9.8
+    print(F)
+>>>>>>> 3a8c37d1c4ab4f08cffba7d37a57b6ed7ba7d1be
