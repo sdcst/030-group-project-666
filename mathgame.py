@@ -1,6 +1,6 @@
 import random
 
-def add_subtract_multiply_divide_game():
+def game():
     total = 5
     print("Welcome to the Add/Subtract/Multiply/Divide Game! \n Try to keep the total between 0 and 10.")
 
@@ -35,10 +35,7 @@ def add_subtract_multiply_divide_game():
             print("\nTotal is out of the range 0-10. You lose!")
             break
         
-        play_again = input("Would you like to continue? (yes/no): ").strip().lower()
-        if play_again != "yes":
-            print("Thanks for playing!")
-            break
+        
 
 if __name__ == "__main__":
-    add_subtract_multiply_divide_game()
+    game()

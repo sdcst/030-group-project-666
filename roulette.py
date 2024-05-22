@@ -5,7 +5,7 @@ def spin_wheel():
     spin = random.randint(0, 36)
     return numbers[spin], colors[spin]
 
-def main():
+def roulette():
     print("Welcome to Russian Wheel Roulette!, you have ")
     bet = input("Place your bet (number 0-36 or red/black/Green)> ")
     bet = bet.strip()
@@ -43,9 +43,11 @@ def main():
             break
         else:
             print("Your entry is invalid, try again (number only)")
-        
-        
-        
 
+def main():
+    roulette()
+        
 if __name__ == "__main__":
-    main()
+    main()   
+
+

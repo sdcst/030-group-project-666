@@ -19,7 +19,7 @@ def calculate_fuel_required(weight, distance, time):
     
     return total_fuel
 
-def main():
+def calc():
     print("空客A330飞机油量计算器")
     print("=====================")
     
@@ -38,4 +38,4 @@ def main():
     print("空客A330所需油量：", fuel_required, "公斤")
 
 if __name__ == "__main__":
-    main()
+    calc()
