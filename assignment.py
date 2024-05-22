@@ -4,15 +4,11 @@
 
 import 牛逼1
 def title(a = "*", b = " "):
-    print(f"{a * 12} Physics Calculator {a*12} \n {b * 12} BY: 芝士666 {b*12}")
+    print(f"{a * 12} THE Calculator {a*12} \n {b * 12} BY: 芝士666 {b*12}")
     return None
 
 def instructions():
-    # Will display instructions
-    # input parameters: none needed
-    # output parameters: None
-    # Author:
-    # Modified:
+    print("Welcome to THE Calculator, where you'll be able to calculate stuff from various areas, and even play some games revolving around numbers. \n In order to pick stuff")
     print(f"Hello, welcome to our Physics Calculator. In ")
     return None
 
