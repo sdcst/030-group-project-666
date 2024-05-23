@@ -11,7 +11,7 @@ def rockets():
             for i in range(10000000):
                 if m > 0 and g > 0 and a > 0:
                     T = m * (g + a)
-                    print(f"The minimum thrust required to liftoff for your rocket is {T} Newtons")   
+                    print(f"The minimum thrust required to liftoff for your rocket is {T} Newtons\n")   
                 else:
                     print("Your inputs are invalid, try again (Reminder: The numbers can't be negative)")
                     rockets()
@@ -26,7 +26,7 @@ def rockets():
             for i in range(10000000):
                 if p > 0 and v > 0 and d > 0 and A > 0:
                     F = (1/2)*(p)*(v ** 2)*(d)*(A)
-                    print(f"The drag force is {F} Newtons")
+                    print(f"The drag force is {F} Newtons\n")
                     return
                 else:
                     print("Your inputs are invalid, try again (Reminder: The numbers can't be negative) \n")
@@ -45,7 +45,7 @@ def rockets():
                         if m > 0 and r > 0:
                             Vo = math.sqrt((G * m) / (r))
                             Vo = round(Vo, 4)
-                            print(f"The orbital velocity is {Vo} m/s")
+                            print(f"The orbital velocity is {Vo} m/s\n")
                             return
                         else:
                             print("Your inputs are invalid, try again (Reminder: The numbers can't be negative) \n")
@@ -61,7 +61,7 @@ def rockets():
                         if m > 0 and r > 0:
                             Ve = math.sqrt(2*(G * m) / (r))
                             Ve = round(Vo, 4)
-                            print(f"The orbital velocity is {Ve} m/s")
+                            print(f"The orbital velocity is {Ve} m/s\n")
                             return
                         else:
                             print("Your inputs are invalid, try again (Reminder: The numbers can't be negative) \n")

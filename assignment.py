@@ -7,6 +7,8 @@ import 燃油消耗
 import 牛逼1
 import mathgame
 import one
+import game
+import 起飞速度
 def title(a = "*", b = " "):
     print(f"{a * 12} THE CALCULATOR {a*12} \n {b * 12} BY: 芝士666 {b*12}")
     return None
@@ -22,7 +24,7 @@ def main():
     title()
     instructions()
     while True:
-        x = input("Please select what you'd like to calculate... \n[1] Rockets \n[2] Fuel Consumption \n[3] Gravity of Object \n[4] Fuel Requirement \n[5] Play Roulette \n[6] Play Keep-Under-10 \n> ").strip()
+        x = input("Please select what you'd like to calculate... \n[1] Rockets \n[2] Fuel Consumption \n[3] Gravity of Object \n[4] Velocity of Rotate (Takeoff) \n[5] Fuel Requirement \n[6] Play Roulette \n[7] Play Keep-Under-10 \n[8] Play Guess the Word \n> ").strip()
         if x == "1":
             rockets.rockets()
         elif x == "2":
@@ -30,11 +32,15 @@ def main():
         elif x == "3":
             牛逼1.nb1()
         elif x == "4":
-            one.calc()
+            起飞速度.VR()
         elif x == "5":
-            roulette.roulette()
+            one.calc()
         elif x == "6":
+            roulette.roulette()
+        elif x == "7":
             mathgame.game()
+        elif x == "8":
+            game.chooseword()
         else:
             print("Invalid input, please try again")
         pass
