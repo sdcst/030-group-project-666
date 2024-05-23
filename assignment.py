@@ -7,8 +7,6 @@ import 燃油消耗
 import 牛逼1
 import mathgame
 import one
-
-import 牛逼1
 def title(a = "*", b = " "):
     print(f"{a * 12} THE CALCULATOR {a*12} \n {b * 12} BY: 芝士666 {b*12}")
     return None
