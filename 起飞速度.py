@@ -8,7 +8,7 @@ def VR():
     v = math.sqrt((2*w)/(a*s*c))
     VR = v / 0.51444
     VR = round(VR)
-    print(f"The speed of rotate is {VR}")
+    print(f"The speed of rotate is {VR} Konts")
 def main():
     VR()
 
