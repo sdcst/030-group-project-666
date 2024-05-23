@@ -10,8 +10,8 @@ def Ar(tt, ct, crt, dt, lt,tr, clr, crr, dr, lr):
 
     return ar
 
-def main():
-    print("A330 fuel consumption calculator")
+def fuel():
+    print("A330 fuel consumption calculator\n There are 10 inputs needed, so please be patient.")
     while True:
         try:
             tt= float(input("Please enter departure time (hours):"))
@@ -33,5 +33,8 @@ def main():
     )
     print("The average fuel consumption rate of the A330 is:", fcr, "kg/hour")
 
+def main():
+    fuel()
+    
 if __name__ == "__main__":
     main()
