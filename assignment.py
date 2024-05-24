@@ -43,7 +43,7 @@ def main():
         elif x == "8":
             mathgame.game()
         elif x == "9":
-            game.chooseword
+            game.chooseword()
         else:
             print("Invalid input, please try again")
         pass
