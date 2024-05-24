@@ -9,6 +9,7 @@ import mathgame
 import one
 import game
 import 起飞速度
+import units
 def title(a = "*", b = " "):
     print(f"{a * 12} THE CALCULATOR {a*12} \n {b * 12} BY: 芝士666 {b*12}")
     return None
@@ -24,7 +25,7 @@ def main():
     title()
     instructions()
     while True:
-        x = input("Please select what you'd like to calculate... \n[1] Rockets \n[2] Fuel Consumption \n[3] Gravity of Object \n[4] Velocity of Rotate (Takeoff) \n[5] Fuel Requirement \n[6] Play Roulette \n[7] Play Keep-Under-10 \n[8] Play Guess the Word \n> ").strip()
+        x = input("Please select what you'd like to calculate... \n[1] Rockets \n[2] Fuel Consumption \n[3] Gravity of Object \n[4] Velocity of Rotate (Takeoff) \n[5] Fuel Requirement \n[6] Convert Units \n[7] Play Roulette \n[8] Play Keep-Under-10 \n[9] Play Guess the Word \n> ").strip()
         if x == "1":
             rockets.rockets()
         elif x == "2":
@@ -36,11 +37,13 @@ def main():
         elif x == "5":
             one.calc()
         elif x == "6":
-            roulette.roulette()
+            units.unit()
         elif x == "7":
-            mathgame.game()
+            roulette.roulette()
         elif x == "8":
-            game.chooseword()
+            mathgame.game()
+        elif x == "9":
+            game.chooseword
         else:
             print("Invalid input, please try again")
         pass
