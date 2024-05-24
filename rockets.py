@@ -12,6 +12,7 @@ def rockets():
                 if m > 0 and g > 0 and a > 0:
                     T = m * (g + a)
                     print(f"The minimum thrust required to liftoff for your rocket is {T} Newtons\n")   
+                    return
                 else:
                     print("Your inputs are invalid, try again (Reminder: The numbers can't be negative)")
                     rockets()
