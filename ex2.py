@@ -1,4 +1,5 @@
 
+t=float(input("The time(h):"))
 d=float(input("The distance(km):"))
 if t<0:
     print("Something Wrong!")
